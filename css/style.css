@@ -1,0 +1,701 @@
+#wrapper {
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:25px;
+}
+
+/* Index Card Styling */
+
+ul#index_cards-small, ul#index_cards-big {
+	text-align:center;
+}
+
+	ul#index_cards-small li, ul#index_cards-big li {
+		background: #ececec;
+		height:300px;
+		width:68px;
+		display:block;
+		float:left;
+		border:1px solid #666;
+		padding:25px 5px;
+		position:relative;
+		-webkit-border-radius: 58px;
+		-webkit-box-shadow: 2px 2px 10px #000;
+		-webkit-transition: all 0.5s ease-in-out;
+		margin: 0;
+	}
+
+#card-1 {
+	-webkit-transform: rotate(-45deg);
+	z-index:10;
+	left:130px;
+	top:95px;
+}
+
+#card-2 {
+	-webkit-transform: rotate(-35deg);
+	z-index:9;
+	left:100px;
+	top:60px;
+}
+
+#card-3 {
+	-webkit-transform: rotate(-25deg);
+	z-index:8;
+	left:70px;
+	top:33px;
+}
+
+#card-4 {
+	-webkit-transform: rotate(-15deg);
+	z-index:7;
+	left:40px;
+	top:15px;
+}
+
+#card-5 {
+	-webkit-transform: rotate(-5deg);
+	z-index:6;
+	left:15px;
+	top:0;
+}
+
+#card-6 {
+	-webkit-transform: rotate(5deg);
+	z-index:5;
+	right:15px;
+	top:0;
+}
+
+#card-7 {
+	-webkit-transform: rotate(15deg);
+	z-index:4;
+	right:40px;
+	top:15px;
+}
+
+#card-8 {
+	-webkit-transform: rotate(25deg);
+	z-index:3;
+	right:70px;
+	top:33px;
+}
+
+#card-9 {
+	-webkit-transform: rotate(35deg);
+	z-index:2;
+	right:100px;
+	top:60px;
+}
+
+#card-10 {
+	-webkit-transform: rotate(45deg);
+	z-index:1;
+	right:130px;
+	top:95px;
+}
+
+/* Hover States */
+
+ul#index_cards-small li:hover, ul#index_cards-big li:hover {
+	z-index:11;
+}
+
+#card-1:hover { -webkit-transform: scale(1.1) rotate(-28deg) translate(20px,0); }
+
+#card-2:hover { -webkit-transform: scale(1.1) rotate(-25deg) translate(10px,0); }
+
+#card-3:hover { -webkit-transform: scale(1.1) rotate(-18deg) ; }
+
+#card-4:hover { -webkit-transform: scale(1.1) rotate(-13deg) ; }
+
+#card-5:hover { -webkit-transform: scale(1.1) rotate(-3deg) ; }
+
+#card-6:hover { -webkit-transform: scale(1.1) rotate(3deg)  ; }
+
+#card-7:hover { -webkit-transform: scale(1.1) rotate(13deg)  ; }
+
+#card-8:hover { -webkit-transform: scale(1.1) rotate(18deg)  ; }
+
+#card-9:hover { -webkit-transform: scale(1.1) rotate(25deg) translate(-10px,0) ; }
+
+#card-10:hover { -webkit-transform: scale(1.1) rotate(28deg) translate(-20px,0); }
+
+/* Content Styling */
+
+		ul#index_cards-small li p, ul#index_cards-big li p {
+			margin-top:0;
+			line-height:20px;
+			height: 190px;
+		}
+		.bignumbers, .bigbignumbers{
+			background-image: url('../img/bg-s-numbers.png');
+			background-size: 850px 120px;
+			background-position: -7px -20px;
+			background-repeat: no-repeat;
+			width: 68px;
+			height: 300px;
+			padding-top: 100px;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.bigbignumbers{
+			background-image: url('../img/bg-b-numbers.png');
+			padding-top: 90px;
+			background-position: -7px -7px;
+		}
+
+		#card-2   p{ background-position:  -94px -20px; }
+		#card-3   p{ background-position: -178px -20px; }
+		#card-4   p{ background-position: -265px -20px; }
+		#card-5   p{ background-position: -351px -20px; }
+		#card-6   p{ background-position: -435px -20px; }
+		#card-7   p{ background-position: -521px -20px; }
+		#card-8   p{ background-position: -607px -20px; }
+		#card-9   p{ background-position: -691px -20px; }
+		#card-10 p{ background-position: -777px -20px; }
+		#index_cards-big #card-2   p{ background-position:  -94px -7px; }
+		#index_cards-big #card-3   p{ background-position: -178px -7px; }
+		#index_cards-big #card-4   p{ background-position: -265px -7px; }
+		#index_cards-big #card-5   p{ background-position: -351px -7px; }
+		#index_cards-big #card-6   p{ background-position: -435px -7px; }
+		#index_cards-big #card-7   p{ background-position: -521px -7px; }
+		#index_cards-big #card-8   p{ background-position: -607px -7px; }
+		#index_cards-big #card-9   p{ background-position: -691px -7px; }
+		#index_cards-big #card-10 p{ background-position: -777px -7px; }
+
+
+@font-face {
+	font-family: trajan;
+	src: url('../fonts/trajan.eot');
+	src: url('../fonts/trajan.eot?#iefix') format('embedded-opentype'), url('../fonts/trajan.woff') format('woff'), url('../fonts/trajan.ttf') format('truetype'), url('../fonts/trajan.svg#trajan') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: adelle;
+	src: url('../fonts/AdelleBasic_Bold.eot');
+	src: url('../fonts/AdelleBasic_Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/AdelleBasic_Bold.woff') format('woff'), url('../fonts/AdelleBasic_Bold.ttf') format('truetype'), url('../fonts/AdelleBasic_Bold.svg#AdelleBasic_Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/open-sans-v13-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Open Sans Light'), local('OpenSans-Light'),
+	url('../fonts/open-sans-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/open-sans-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/open-sans-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/open-sans-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/open-sans-v13-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* BASELINE */
+body{
+	font-family: 'Open Sans', 'Arial', 'Sans-serif';
+	background: #ccc;
+	color: #ececec;
+}
+nav, ul, li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul{
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: adelle;
+	background: -webkit-linear-gradient(left, #ba1023, rgba(255, 255, 255, 0));
+	/*-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	color: #ececec;
+}
+
+h1{
+	font-size: 60px;
+	margin: 20px 0 -10px;
+	padding-left: 5px;
+	/*-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ececec;*/
+}
+
+h2{
+	font-size: 1.5em;
+    margin-bottom: .5em;
+    margin-top: 2em;
+}
+
+h3{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+h2, h3{
+	background: -webkit-linear-gradient(left, rgba(186,16,35,1.0), rgba(186, 16, 35, 0));
+	padding: 5px 5px 0px;
+	color: #ececec;
+	-webkit-text-fill-color: initial;
+}
+
+#home h1{
+	font-size: 60px;
+	margin: 20px 0 -10px;
+	color: #ececec;
+	background: -webkit-linear-gradient(left, #ececec, rgba(255, 255, 255, 0));
+	-webkit-text-fill-color: initial;
+	-webkit-text-stroke-width: 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+section{
+	padding: 150px 0 975px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+table.terms{
+	margin: 0 auto;
+}
+/* EOS*/
+
+/* DISPLAY CHINESE TRANSLATIONS */
+@-webkit-keyframes zh-tooltip {
+  0% {
+	opacity: .0;
+  }
+  100% {
+	opacity: .95;
+  }
+}
+
+.chinese, .bignum{
+	color: #ba1023;
+	cursor: help;
+	position: relative;
+}
+
+#index_cards-small h3, #index_cards-big h3{
+	margin-top: 0;
+}
+#index_cards-small p,#index_cards-big p{
+	color: #ba1023;
+	font-size: 15px;
+}
+
+.bignum{
+	color: #ececec;
+}
+
+.chinese span, .bignum span{
+	display: none;
+}
+
+.chinese:hover span, .bignum:hover span{
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	z-index: 5;
+	color: #ba1023;
+	background: -webkit-linear-gradient(top, #ececec, #bbb);
+	font-size: 25px;
+	text-align: left;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 10px;
+	white-space:nowrap;
+	border: 3px solid #ba1023;
+	-webkit-animation-name: zh-tooltip;
+	-webkit-animation-duration: .3s;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+ .bignum:hover span{
+	font-size: 20px;
+	width: 300px;
+	white-space: normal;
+ }
+
+.chinese span:first-line{
+	font-size: 30px;
+}
+/* EOS */
+
+/* MAIN MENU*/
+#main-menu{
+	position: fixed;
+	top: 0;
+	right: 95px;
+	height: 150px;
+	z-index: 20;
+}
+
+#main-menu ul li{
+	width: 50px;
+	margin-top: 70px;
+	float: left;
+	transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg);
+}
+
+@-webkit-keyframes glow {
+  0% {
+	-webkit-box-shadow: 0 0 16px rgba(186,16,35, 0.5);
+	border-color: rgba(255,0,0,0.5);
+  }
+  100% {
+	-webkit-box-shadow: 0 0 16px rgba(186,16,35, 1.0), 0 0 36px rgba(186,16,35, 1.0);
+	border-color: rgba(186,16,35,1.0);
+  }
+}
+
+#main-menu ul li a{
+	background: #ececec;
+	border-radius: 25px;
+	padding: 5px 10px 5px 52px;
+	margin: 10px 0;
+	border-top: #ba1023 solid 1px;
+	font-family: trajan;
+	display: block;
+	width: 150px;
+	background-image: url('../img/s-numbers.png');
+	background-repeat: no-repeat;
+    -webkit-transition: background-image .3s ease-in-out, color .3s ease-in-out;
+	transition: background-image .3s ease-in-out, color .3s ease-in-out;
+}
+
+#main-menu ul li a:hover{
+	background-color: #eee;
+	color: #ba1023;
+	/*-webkit-animation-name: glow;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;*/
+	background-image: url('../img/b-numbers.png');
+}
+/* EOS */
+
+/* SCORING TABLE */
+table.points{
+	border-spacing: 0px;
+	font-family: 'trajan';
+	font-size: 14px;
+	margin: 0 auto;
+	border-collapse: separate;
+}
+
+.points tr:nth-child(odd) td{
+	background: rgba(255, 255, 255, 0.8);
+	margin-bottom: 10px;
+	color: #ba1023;
+}
+
+.points tr th{
+	background: rgba(255, 255, 255, 0.8);
+	padding: 5px;
+	text-align: left;
+	color: #ba1023;
+}
+
+.points tr td:nth-child(4),.points tr td:nth-child(3){
+	font-size: 20px;
+	width: 100px;
+}
+
+.points tr td:nth-child(1){
+	width: 64px;
+}
+
+.points tr td:nth-child(2){
+	width: 100px;
+}
+
+.points tr td{
+	text-align: center;
+	padding: 10px 5px 5px;
+}
+
+.points tr td img{
+	height: 100px;
+	width: 100px;
+}
+/* EOS*/
+
+/* CARDS TABLE */
+.num-container{
+	display: block;
+}
+
+.numbers{
+	display: inline-block;
+	text-align: center;
+	padding: 0 0 20px;
+	font-size: 25px;
+}
+
+.numbers img{
+	height: 75px;
+	width: 75px;
+}
+/* EOS */
+#content{
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#bg-shapes .shape{
+	position:absolute;
+	width: 5000px;
+	margin-left: -2500px;
+	background: #000;
+	left: 50%;
+	z-index: -1;
+	opacity: .7;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+		 -o-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+}
+
+#bg-shapes .home{
+	height: 600px;
+	top: 0;
+	margin-left: -2570px;
+	background: #ba1023;
+}
+#bg-shapes .history{
+	height: 870px;
+	top: 1255px;
+}
+
+#bg-shapes .card{
+	height: 975px;
+	top: 2680px;
+}
+
+#bg-shapes .gameplay{
+	height: 1075px;
+	top: 4440px;
+}
+
+#bg-shapes .hands{
+	height: 930px;
+	top: 6245px;
+}
+
+#bg-shapes .scoring{
+	height: 1100px;
+	top: 7730px;
+}
+
+#bg-shapes .info{
+	height: 1250px;
+	top: 9475px;
+}
+
+#main-menu ul li:nth-child(1) a{
+		background-position: 10px -309px;
+}
+#main-menu ul li:nth-child(2) a{
+		background-position: 10px -275px;
+}
+#main-menu ul li:nth-child(3) a{
+		background-position: 10px -241px;
+}
+#main-menu ul li:nth-child(4) a{
+		background-position: 10px -206px;
+}
+#main-menu ul li:nth-child(5) a{
+		background-position: 10px -171px;
+}
+#main-menu ul li:nth-child(6) a{
+		background-position: 10px -135px;
+}
+#main-menu ul li:nth-child(7) a{
+		background-position: 10px -100px;
+}
+#main-menu ul li:nth-child(8) a{
+		background-position: 10px -68px;
+}
+#main-menu ul li:nth-child(9) a{
+		background-position: 10px -33px;
+}
+#main-menu ul li:nth-child(10) a{
+		background-position: 10px 1px;
+}
+
+#home{
+	width: 770px;
+	color: #ececec;
+	padding: 225px 0 867px;
+}
+
+#cards{
+	width: 780px;
+	margin-top: 275px;
+	padding-bottom: 465px;
+}
+
+#gambling, #winning, #penalties{
+	width: 400px;
+}
+
+#gameplay{
+	margin-top: 750px;
+	padding-bottom: 628px;
+	width: 600px;
+}
+
+#hands{
+	width: 600px;
+	padding-bottom: 325px;
+	margin-top: 230px;
+}
+
+#scoring{
+	width: 460px;
+	margin-top: 235px;
+	padding-bottom: 98px;
+}
+
+#info{
+	width: 600px;
+	margin-top: 550px;
+	padding-bottom: 1026px;
+}
+
+#history{
+	color: #ececec;
+	width: 600px;
+	padding-bottom: 511px;
+}
+
+#info article ul, #gameplay article ul{
+	list-style: initial;
+	margin-left: 20px;
+}
+
+#share{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+#share img{
+	height: 34px;
+	width: 214px;
+}
+
+.backgrounds{
+	position: absolute;
+	left: 50%;
+	margin-left: -1000px;
+	height: 1500px;
+	width: 2000px;
+	z-index: -2;
+	border-bottom: solid 4px #777;
+
+}
+
+#homebg{
+	background-image: url('../img/bg1.jpg');
+	top: 0;
+	height: 1250px;
+}
+
+#historybg{
+	background-image: url('../img/bg2.jpg');
+	top: 1254px;
+	background-position: 0 -250px;
+	height: 1250px;
+}
+#cardbg{
+	background-image: url('../img/bg3.jpg');
+	top: 2508px;
+}
+#gameplaybg{
+	background-image: url('../img/bg4.jpg');
+	top: 4012px;
+	background-position: 0 -150px;
+	height: 1850px;
+}
+#handsbg{
+	background-image: url('../img/bg8.jpg');
+	top: 5866px;
+}
+#scoringbg{
+	background-image: url('../img/bg6.jpg');
+	top: 7370px;
+}
+
+#infobg{
+	background-image: url('../img/bg9.jpg');
+	top: 8874px;
+	height: 1500px
+}
+
+#bottombg{
+	background-image: url('../img/bg1.jpg');
+	top: 10378px;
+	height: 1375px
+}
+
+h1 + p:first-letter{
+	font-size: 250%;
+}
+
+#index_cards-big{
+	display: none;
+}
+.suitbutton{
+	padding: 5px 10px 2px;
+	background: #ececec;
+	color: #ba1023;
+	-webkit-text-fill-color: initial;
+	border-radius: 20px;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	font-family: adelle;
+	cursor: pointer;
+}
+
+.suitbutton:hover{
+	-webkit-animation-name: glow;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+#hands h2, #gameplay h2, #history h2, #info h3{
+	color: #ba1023;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1.0), rgba(255, 255, 255, 0));
+}
+
+#wrapper h3{
+	background: #ba1023;
+	border-radius: 10px;
+}
